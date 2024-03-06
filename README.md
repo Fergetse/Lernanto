@@ -1,31 +1,19 @@
-# React + TypeScript + Vite
+# Technology envolved in the project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### What is lernanto?
+Lernanto is a *web and movile platform* currently being developed whose main objective is to provide tools to the users that allow them to improve their **metacognitive skills** and learn how to lear by the propper way
 
-Currently, two official plugins are available:
+#### Technologies
+* The main structure / front-end code was did in **Expo**
+    * Main coding lenguaje is **TypeScript**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+--------------------------------------------------------
 
-## Expanding the ESLint configuration
+# Teknologio implikita en la projekto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Kio estas lernanto?
+Lernanto estas *retejo kaj movebla platformo* nuntempe disvolvita, kies ĉefa celo estas provizi ilojn al la uzantoj, kiuj ebligas al ili plibonigi siajn **metakognajn kapablojn** kaj lerni kiel lerni laŭ la ĝusta maniero.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# Lernanto
+#### Teknologioj
+* La ĉefa strukturo/antaŭfina kodo estis farita en **Expo**
+     * Ĉefa koda lingvo estas **TypeScript**
