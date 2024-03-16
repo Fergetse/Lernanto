@@ -1,25 +1,66 @@
+  /* Import Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 html, body {
-    font-family: 'Dongle', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     margin: 0;
     padding: 0;
   }
+
+
   
-  .text-container {
-    z-index: 100;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    justify-content: center;
-    align-items: center;
-    font-size: 96px;
-    color: white;
-    opacity: 1;
-    user-select: none;
-    text-shadow: 1px 1px rgba(0,0,0,0.1);
+  @keyframes anim {
+    0% {
+      transform: translateX(100%);
+      border-top-left-radius: 120px;
+      border-bottom-left-radius: 120px;
+
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      
+    }
+    100% {
+      transform: translateX(0%);
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+
+      border-top-right-radius: 120px;
+      border-bottom-right-radius: 120px;
+    }
   }
+
+  @keyframes anim2 {
+    0% {
+      transform: translateX(-100%);
+      border-top-right-radius: 120px;
+      border-bottom-right-radius: 120px;
+
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      
+    }
+    100% {
+      transform: translateX(0px);
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+
+      border-top-left-radius: 120px;
+      border-bottom-left-radius: 120px;
+    }
+  }
+  
+  
+  .anim-card{
+   
+    animation-name: anim;
+    animation-duration: 0.9s;
+  }
+
+  .anim-org{
+    animation-name: anim2;
+    animation-duration: 0.9s;
+  }
+
   
   :root {
     --color-bg1: rgb(254, 255, 194);
@@ -172,6 +213,39 @@ html, body {
       opacity: 1;
     }
 
+      
+    .g6 {
+      position: absolute;
+      background: radial-gradient(circle at center, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 45%) no-repeat;
+      mix-blend-mode: var(--blending);
+  
+      width: calc(var(--circle-size) * 2);
+      height: calc(var(--circle-size) * 2);
+      top: calc(50% - var(--circle-size));
+      left: calc(50% - var(--circle-size));
+  
+      transform-origin: calc(50% - 800px) calc(50% + 200px);
+      animation: moveInCircle 20s ease infinite;
+  
+      opacity: 1;
+    }
+
+      
+    .g7 {
+      position: absolute;
+      background: radial-gradient(circle at center, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 45%) no-repeat;
+      mix-blend-mode: var(--blending);
+  
+      width: calc(var(--circle-size) * 2);
+      height: calc(var(--circle-size) * 2);
+      top: calc(50% - var(--circle-size));
+      left: calc(50% - var(--circle-size));
+  
+      transform-origin: calc(50% - 800px) calc(50% + 200px);
+      animation: moveInCircle 20s ease infinite;
+  
+      opacity: 1;
+    }
   
     .interactive {
       position: absolute;

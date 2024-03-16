@@ -1,11 +1,13 @@
+import BaseCardLogin from '../components/BaseCardLogin/BaseCardLogin'
 import '../styles/style.scss'
 
 const Login = () => {
   return (
     <div className="relative w-screen h-screen flex">
-      <div className="text-container">
-        card de login
-      </div>
+    
+        <BaseCardLogin
+          
+        />
       <div className="gradient-bg">
         <svg xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -22,6 +24,8 @@ const Login = () => {
           <div className="g3"></div>
           <div className="g4"></div>
           <div className="g5"></div>
+          <div className="g6"></div>
+          <div className="g7"></div>
           <div className="interactive"></div>
         </div>
       </div>
